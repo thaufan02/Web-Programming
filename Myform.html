@@ -6,12 +6,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   
   <script>
-      $(document).ready(function() { $('.error').hide(); $('.submit').click(function(event){
+      $(document).ready(function() { $('.error').hide(); $('.submit').click(function(event){// for the document
 var data=$('.infobox').val(); if(validate_userid(data))
 {
-$('.error').hide(); }
+$('.error').hide(); }//error is hiding
 else {
-$('.error').show();
+$('.error').show();//error is Showing
 event.preventDefault(); }
 }); });
 function validate_userid(uid)
